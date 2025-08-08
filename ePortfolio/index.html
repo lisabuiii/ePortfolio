@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaqueries/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav"> 
+        <div class="logo">Nguyen Bui</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#creativepublications">Creative Publications</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nguyen Bui</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#creativepublications" onclick="toggleMenu()">Creative Publications</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Nguyen Bui profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nguyen "Lisa" Bui</h1>
+            <p class="section__text__p2">Computer Science Student | Aspiring Backend Developer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/Resume_NguyenBui.pdf')"
+                >Download CV
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/nguyennbui/"
+                target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn Profile" 
+                     class="icon">
+                </a>
+                <a href="https://github.com/lisabuiii"
+                target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github.png" alt="My Github Profile" 
+                     class="icon">
+                </a>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.S. in Computer Science - 2027 <br />
+                        A.S. in Hospitality and Hotel Management</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/languages.png"
+                        alt="Languages icon"
+                        class="icon"
+                        />
+                        <h3>Languages</h3>
+                        <p>English (Fluent)<br />
+                            Vietnamese (Fluent)<br />
+                            Mandarin (Basic)
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        My journey in Computer Science at the University of Central Florida
+                        has equipped me with a strong foundation in software development 
+                        and system architecture. Beyond coding, my background in hospitality 
+                        and leadership has honed my problem-solving, communication, and team 
+                        management skills, allowing me to approach technical challenges with 
+                        a user-centric perspective. I'm driven by a desire to build efficient 
+                        and impactful technological solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-sub-title">
+            <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/python.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p2>Intermediate</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/java.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p2>Intermediate</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/c.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C</h3>
+                                <p2>Intermediate</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/html.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/css.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                         <article>
+                            <img 
+                                src="./assets/dart.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Dart</h3>
+                                <p2>Basic</p2>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/ios.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>iOS Development</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/android.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Android Development</h3>
+                                <p2>Intermediate</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/git.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git/Github</h3>
+                                <p2>Intermediate</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/googleapis.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Google APIs</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/firebase.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Firebase</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/mysql.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p2>Basic</p2>
+                            </div>
+
+                        </article>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="slider-container">
+            <div class="slider">
+            <div class="details-container color-container slide">
+                <div class="article-container">
+                    <img 
+                        src="./assets/speechtranslator.png"
+                        alt="Speech Translator App"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Speech Translator App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/SpeechTranslator', '_blank')">
+                        Github
+                    </button>
+                     <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://youtube.com/shorts/IfHNknnethw', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <div class="article-container">
+                    <img 
+                        src="./assets/personaltrainer.png"
+                        alt="Personal Trainer App"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Trainer App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/PersonalTrainerApp', '_blank')">
+                        Github
+                    </button>
+                     <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://youtube.com/shorts/zDOEtRxUD4I', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <div class="article-container">
+                    <img 
+                        src="./assets/mycoffeeshop.png"
+                        alt="My Coffee Shop"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">My Coffee Shop</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/MyCoffeeShop', '_blank')">
+                        Github
+                    </button>
+                     <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/MyCoffeeShop', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <div class="article-container">
+                    <img 
+                        src="./assets/qualiday.png"
+                        alt="Qualiday"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Qualiday</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/Qualiday', '_blank')">
+                        Github
+                    </button>
+                     <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://youtu.be/ANzR6bgYng0', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <div class="article-container">
+                    <img 
+                        src="./assets/chickflix.png"
+                        alt="Chickflix"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Chickflix</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://github.com/lisabuiii/Chickflix', '_blank')">
+                        Github
+                    </button>
+                     <button class="btn btn-color-2 project-btn" 
+                    onclick="window.open('https://youtu.be/T72w1XmPD2o', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="plusProjects(-1)">&#10094;</button>
+        <button class="next" onclick="plusProjects(1)">&#10095;</button>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"> 
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Check Out My</p>
+        <h1 class="title">Experience</h1>
+        <div class="slider-container">
+            <div class="slider">
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">Nini Nails and Spa</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/nininailsandspa.png"
+                        alt="Nini Nails and Spa"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">Marriott International Inc</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/marriott.png"
+                        alt="Marriott"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">CFI, Inc</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/cfi.png"
+                        alt="CFI"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">Axum Coffee</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/axumcoffee.png"
+                        alt="Axum Coffee"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="plusExperience(-1)">&#10094;</button>
+        <button class="next" onclick="plusExperience(1)">&#10095;</button>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#creativepublications'"> 
+    </section>
+    <section id="creativepublications">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Creative Publications</h1>
+         <div class="slider-container">
+            <div class="slider">
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">The Jouney of 18</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/journeyof18.png"
+                        alt="CFI"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">Storyteller</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/theinbetween.png"
+                        alt="The In-Between of Love"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+            <div class="details-container color-container slide">
+                <h2 class="experience-sub-title project-title">Storyteller</h2>
+                <div class="article-container">
+                    <img 
+                        src="./assets/coffeesanctuary.png"
+                        alt="A Coffee Sanctuary - Lost and Found"
+                        class="project-img"
+                    />
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="plusPub(-1)">&#10094;</button>
+        <button class="next" onclick="plusPub(1)">&#10095;</button>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"> 
+    </section>
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                    src="./assets/email.png"
+                    alt="email icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:qnb.lisa@gmail.com">qnb.lisa@gmail.com</a></p>
+            </div>
+             <div class="contact-info-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icons"
+                />
+                <p><a href="https://www.linkedin.com/in/nguyennbui/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#creativepublications">Creative Publications</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright & &#169; 2025 Nguyen Bui. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
